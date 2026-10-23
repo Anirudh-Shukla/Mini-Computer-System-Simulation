@@ -1,0 +1,40 @@
+% Array Add Vector Test - N = 16
+% C[i] = A[i] + B[i]
+% Vector registers are 8 lanes (256 bits / 32 bits).
+% Therefore N=16 is processed as two vector operations.
+%
+% Memory layout:
+% 0x000 : N = 16
+% 0x004 : A[16]
+% 0x044 : B[16]
+% 0x084 : C[16]
+%
+% A = 1..16
+% B = 16..1
+% C = 17..17
+
+x1 = 0
+x2 = 4
+x3 = 68
+x4 = x3 + 64
+
+% Addresses of second 8-element block
+x5 = x2 + 32
+x6 = x3 + 32
+x7 = x4 + 32
+
+% Load first 8 elements
+v1 = [x2]
+v2 = [x3]
+
+% Load second 8 elements
+v3 = [x5]
+v4 = [x6]
+
+% Add vectors
+v5 = v1 + v2
+v6 = v3 + v4
+
+% Store result vectors
+[x4] = v5
+[x7] = v6

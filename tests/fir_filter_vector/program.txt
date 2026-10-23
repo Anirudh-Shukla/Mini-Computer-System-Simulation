@@ -1,0 +1,24 @@
+% FIR vector correctness test - 8 lanes
+% y[i] = x0[i] + 2*x1[i] + x2[i] + x3[i]
+
+x1 = [0]
+x2 = 4
+x3 = 36
+x4 = 68
+x5 = 100
+
+v1 = [x2]
+v2 = [x3]
+v3 = [x4]
+v4 = [x5]
+
+v5 = v1 * 1
+v6 = v2 * 2
+v7 = v3 * 1
+v8 = v4 * 1
+
+v5 = v5 + v6
+v5 = v5 + v7
+v5 = v5 + v8
+
+[132] = v5

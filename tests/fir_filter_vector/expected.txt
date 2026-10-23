@@ -1,0 +1,4 @@
+Correctness check:
+Logical data address 132 (word indices 33-40) must contain:
+5 10 15 20 25 30 35 40
+Expected result: x0[i] + 2*x1[i] + x2[i] + x3[i] = 5*i for i=1..8.

@@ -1,0 +1,4 @@
+Correctness check:
+Logical data address 132 (word indices 33-48) must contain:
+17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17
+Expected result: A[i] + B[i] = 17 for all 16 elements.

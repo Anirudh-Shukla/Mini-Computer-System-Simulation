@@ -1,0 +1,3 @@
+Correctness check:
+Logical data address 20 (word index 5) = 2160
+Expected result: 16 + 32 + 48 + 64 + 2000 = 2160
