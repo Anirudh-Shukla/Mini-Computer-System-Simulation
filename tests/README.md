@@ -10,5 +10,5 @@ The expected files record the values used to verify correctness after execution.
 | fir_filter | Scalar FIR calculation | 8 at address 16 |
 | fir_filter_vector | 8-lane vector FIR | 5, 10, 15, 20, 25, 30, 35, 40 at address 132 |
 
-All four tests were executed successfully with the Lab 5 scheduler and paging system.
+All four tests were executed successfully with the scheduler and paging system.
 The vector array-add test avoids the signed 8-bit immediate limitation by computing address 132 with register arithmetic.
