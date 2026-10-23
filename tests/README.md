@@ -1,4 +1,4 @@
-# Lab 5 Test Cases
+# Test Cases
 
 Each test contains `program.txt`, `program.byte`, `data.byte`, and `expected.txt`.
 The expected files record the values used to verify correctness after execution.
